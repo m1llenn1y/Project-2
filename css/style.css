@@ -39,3 +39,46 @@ body {
 .btn-primary:hover {
     background-color: var(--color-primary-hover);
 }
+.header {
+    margin: 0 0 4.5rem 0;
+    width: 100%;
+    position: absolute;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1.25rem;
+}
+.header__nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+.nav__item {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: 0.25rem 0.5rem;
+}
+.header__nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+.hero {
+    background: var(--color-white) url('/img/hero-bg.svg') no-repeat center center;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+}
