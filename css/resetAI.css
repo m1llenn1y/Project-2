@@ -1,0 +1,55 @@
+/* 1. Глобальное обнуление размеров и отступов */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Настройки для плавной прокрутки и высоты */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 3. Базовые настройки для body */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5; /* Защита от слипания строк */
+    -webkit-font-smoothing: antialiased; /* Делает шрифты более гладкими */
+}
+
+/* 4. Сброс списков (чтобы не прыгали точки у ul/ol) */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 5. Умный сброс для ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 6. Безопасность для картинок (то, о чём мы говорили в прошлый раз) */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* 7. Наследуем шрифты для инпутов и кнопок, чтобы они не жили своей жизнью */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Убираем дефолтные рамки у кнопок */
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
