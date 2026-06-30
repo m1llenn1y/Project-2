@@ -317,9 +317,6 @@ body {
         font-size: 2.25rem;
         line-height: 2.8125rem;
     }
-    .features__grid {
-        column-gap: 0;
-    }
     .features__card-title {
         font-size: 1.5rem;
         line-height: 2rem;
