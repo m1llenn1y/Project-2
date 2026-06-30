@@ -10,6 +10,7 @@
     --color-primary: #7C3AED;
     --color-primary-hover: #6D28D9;
     --color-border: #E5E7EB;
+    --color-testimonial-bg: #D5FAFC;
 
     --container-width: 1440px;
     --container-padding: 7rem; 
@@ -331,4 +332,109 @@ body {
     .features__grid {
         row-gap: 3rem;
     }
+}
+.testimonial {
+    background-color: var(--color-testimonial-bg);
+}
+.testimonial__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-block: 7.5rem 6rem;
+    position: relative;
+}
+.testimonial__quote {
+    position: absolute;
+    top: 4rem;
+    left: 7rem;
+    opacity: 30%;
+}
+.testimonial__up,
+.testimonial__down {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.testimonial__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+    z-index: 100;
+}
+.testimonial__title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+}
+.testimonial__description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+.testimonial__card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.testimonial__card-1 {
+    margin-top: 4.75rem;
+}
+.testimonial__card-2 {
+    margin-top: -12.5rem;
+    height: 100%;
+}
+.testimonial__header,
+.testimonial__card-1 {
+    max-width: 488px;
+}
+.testimonial__card-2,
+.testimonial__card-3 {
+    max-width: 384px;
+}
+.testimonial__logo {
+    width: 112px;
+    height: 32px;
+    max-width: 100%;
+}
+.testimonial__details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 2rem;
+    position: relative;
+}
+.testimonial__details::before {
+    content: url('/img/quote-mark-content.svg');
+    position: absolute;
+    left: 0;
+    top: -0.5rem;
+}
+.testimonial__details-description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.4px;
+}
+.testimonial__person {
+    display: flex;
+    flex-direction: column;
+}
+.testimonial__person-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+}
+.testimonial__person-pro {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: var(--color-text-light-grey);
+}
+.testimonial__down,
+.testimonial__up {
+    justify-content: center;
+}
+@media (max-width: 1200px) {
+    
 }
