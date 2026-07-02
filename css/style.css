@@ -11,6 +11,8 @@
     --color-primary-hover: #6D28D9;
     --color-border: #E5E7EB;
     --color-testimonial-bg: #D5FAFC;
+    --color-cta-bg: #1DB5BE;
+    --color-footer-bg: #000000;
 
     --container-width: 1440px;
     --container-padding: 7rem; 
@@ -648,7 +650,6 @@ body {
     .clouds__logos {
         gap: 2.375rem;
         padding: 1.5rem 1.75rem;
-        background: url('/img/clouds-vector-bg.svg') no-repeat center center;
         background-size: contain;
     }
     .clouds__logos-up,
@@ -673,5 +674,183 @@ body {
     .clouds__description {
         font-size: 1rem;
         line-height: 1.5rem;
+    }
+}
+.cta {
+    background-color: var(--color-cta-bg);
+}
+.cta__container {
+    display: flex;
+    gap: 2rem;
+}
+.cta__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    max-width: 50%;
+    padding-block: 6.9375rem;
+}
+.cta__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.cta__title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+}
+.cta__description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+.cta__download {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.cta__download-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+}
+.cta__download-badges {
+    display: flex;
+    gap: 0.75rem;
+}
+.cta__image {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+.cta__img-wrapper-up,
+.cta__img-wrapper-down {
+    width: 232px;
+}
+.cta__img-wrapper-up {
+    align-self: flex-start;
+}
+.cta__img-wrapper-down {
+    align-self: flex-end;
+}
+.cta__img-phone-1,
+.cta__img-phone-2 {
+    box-shadow: 0px 24px 48px -12px rgba(17, 24, 39, 0.25);
+}
+.cta__img-phone-1 {
+    border-radius: 0 0 2.5rem 2.5rem;
+}
+.cta__img-phone-2 {
+    border-radius: 2.5rem 2.5rem 0 0;
+}
+@media (max-width: 1200px) {
+    .cta__container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .cta__content {
+        padding-block: 5rem 0;
+        max-width: 100%;
+    }
+    .cta__title {
+        font-size: 2.25rem;
+        line-height: 2.8125rem;
+    }
+    .cta__image {
+        justify-content: space-evenly;
+    }
+    .cta__img-wrapper-up {
+        padding-bottom: 10.875rem;
+    }
+}
+@media (max-width: 670px) {
+    .cta__container {
+        gap: 2rem;
+    }
+    .cta__content {
+        padding-top: 3rem;
+    }
+    .cta__title {
+        font-size: 1.875rem;
+        line-height: 2.5rem;
+    }
+    .cta__description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .cta__image {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        padding-inline: 0;
+    }
+    .cta__img-wrapper-up {
+        padding-bottom: 0;
+    }
+    .cta__img-wrapper-up,
+    .cta__img-wrapper-down {
+        align-self: center;
+    }
+}
+.footer {
+    background-color: var(--color-footer-bg);
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-block: 4rem;
+}
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.footer__logo {
+    width: 32px;
+}
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.footer__links-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5625rem;
+}
+.footer__link-item {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--color-white);
+}
+.footer__copyright {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: var(--color-text-slight-grey);
+}
+.footer__download {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 2.5625rem;
+}
+.footer__download-title {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: var(--color-text-slight-grey);
+}
+@media (max-width: 720px) {
+    .footer__download {
+        padding-right: 0;
+    }
+}
+@media (max-width: 670px) {
+    .footer__container {
+        flex-direction: column;
+        padding-block: 2.5rem;
     }
 }
